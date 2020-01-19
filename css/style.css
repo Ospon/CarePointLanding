@@ -16,4 +16,37 @@ p {
   padding: 100px 5%;
 }
 
+header {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  padding: 40px 5%;
+}
+header nav {
+  grid-column: 1/4;
+}
+header nav ul {
+  display: flex;
+  flex-direction: row;
+  padding: 0;
+  margin: 0;
+}
+header nav ul li {
+  padding: 30px 10px;
+}
+header .social {
+  grid-column: 4/5;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+}
+
+.topBar {
+  grid-column: 1/5;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-column-gap: 20px;
+}
+
 /*# sourceMappingURL=style.css.map */
