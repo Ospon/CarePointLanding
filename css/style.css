@@ -8,6 +8,19 @@ h1, h2, h3, h4, h5 {
   margin: 0 0 30px 0;
 }
 
+h1 {
+  font-size: 3em;
+  color: #474747;
+}
+
+h2 {
+  font-size: 2.8em;
+}
+
+h3 {
+  font-size: 1.875em;
+}
+
 p {
   font-size: 1em;
 }
@@ -16,37 +29,159 @@ p {
   padding: 100px 5%;
 }
 
-header {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  padding: 40px 5%;
-}
-header nav {
-  grid-column: 1/4;
-}
-header nav ul {
-  display: flex;
-  flex-direction: row;
-  padding: 0;
-  margin: 0;
-}
-header nav ul li {
-  padding: 30px 10px;
-}
-header .social {
-  grid-column: 4/5;
-}
-
 main {
   display: flex;
   flex-direction: column;
 }
 
+.mainBtn {
+  padding: 16px 30px;
+  color: #fff;
+  border-radius: 30px;
+  text-decoration: none;
+  text-transform: uppercase;
+  background-color: #1a9bdc;
+  display: inline-block;
+  margin: 0 auto;
+}
+
+.mainBtn:hover {
+  background-color: #171717;
+}
+
 .topBar {
-  grid-column: 1/5;
+  grid-column: 1/-1;
+  display: grid;
+  grid-template-columns: 1fr 0.7fr 0.6fr 0.5fr;
+  grid-column-gap: 20px;
+}
+.topBar__logoWrapper {
+  padding-left: 10px;
+}
+.topBar__companyContact {
+  display: grid;
+  grid-template-columns: 50px 1fr;
+  grid-template-rows: 25px 25px;
+  font-family: "Open Sans";
+}
+.topBar__iconWrapper {
+  grid-row: 1/-1;
+  border-radius: 50%;
+  background-color: #1a9bdc;
+  color: #fff;
+  display: grid;
+  justify-items: center;
+  align-content: center;
+  font-size: 1.5em;
+}
+.topBar h5 {
+  margin-bottom: 0;
+  font-size: 0.9em;
+  margin: auto 12px;
+}
+.topBar p {
+  margin: 0;
+  font-size: 0.9em;
+  margin: auto 12px;
+}
+
+.advantages {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-column-gap: 20px;
+}
+.advantages__item {
+  padding: 60px;
+  color: #fff;
+  display: grid;
+  grid-auto-rows: auto;
+  justify-items: center;
+  text-align: center;
+}
+.advantages__item:nth-child(1) {
+  background-color: #43b1d2;
+}
+.advantages__item:nth-child(2) {
+  background-color: #3fb6c6;
+}
+.advantages__item:nth-child(3) {
+  background-color: #3cbbbb;
+}
+.advantages__item:nth-child(4) {
+  background-color: #37c3a8;
+}
+.advantages__iconWrapper {
+  width: 76px;
+  height: 76px;
+  background-color: #fff;
+  border-radius: 50%;
+  padding: 10px;
+}
+.advantages__iconWrapper img {
+  width: 100%;
+}
+
+header {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  padding: 40px 5% 0;
+}
+header nav {
+  grid-column: 1/4;
+}
+header nav ul {
+  font-family: "Montserrat", serif;
+  display: flex;
+  flex-direction: row;
+  padding: 0;
+  list-style-type: none;
+  margin: 0;
+}
+header nav ul li {
+  padding: 30px 10px;
+}
+header nav ul li a {
+  text-decoration: none;
+  color: #6a6a6a;
+  font-size: 1.2em;
+  font-weight: 500;
+}
+header nav ul li a:hover {
+  color: #1a9bdc;
+}
+header .social {
+  grid-column: 4/5;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(50px, 1fr));
+  justify-items: right;
+  align-items: center;
+}
+header .social a {
+  font-size: 1.4em;
+  color: #171717;
+}
+header .social a:hover {
+  color: #1a9bdc;
+}
+header .active {
+  font-weight: 700;
+  color: #171717;
+}
+
+.mainOffer {
+  background: url("../../img/MainDoctor.jpg") no-repeat center;
+  background-size: cover;
+}
+.mainOffer__titleWrapper {
+  width: 50%;
+  display: grid;
+  grid-template-rows: 1.5fr 0.5fr 0.8fr;
+  padding: 150px 0;
+}
+.mainOffer h1, .mainOffer p {
+  text-align: center;
+}
+.mainOffer .mainBtn {
+  align-self: center;
 }
 
 /*# sourceMappingURL=style.css.map */

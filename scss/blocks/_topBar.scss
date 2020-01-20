@@ -1,6 +1,40 @@
 .topBar {
-    grid-column: 1/5;
+    grid-column: 1/-1;
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: 1fr 0.7fr 0.6fr 0.5fr;
     grid-column-gap: 20px;
+
+    &__logoWrapper {
+        padding-left: 10px;
+    }
+
+    &__companyContact {
+        display: grid;
+        grid-template-columns: 50px 1fr;
+        grid-template-rows: 25px 25px;
+        font-family: $primary-font;
+    }
+
+    &__iconWrapper {
+        grid-row: 1/-1;
+        border-radius: 50%;
+        background-color: $blue;
+        color: #fff;
+        display: grid;
+        justify-items: center;
+        align-content: center;
+        font-size: 1.5em;
+    }
+
+    h5 {
+        margin-bottom: 0;
+        font-size: 0.9em;
+        margin: auto 12px;
+    }
+
+    p {
+        margin: 0;
+        font-size: 0.9em;
+        margin: auto 12px;
+    }
 }

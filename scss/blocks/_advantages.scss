@@ -1,0 +1,41 @@
+.advantages {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+
+    &__item {
+        padding: 60px;
+        color: #fff;
+        display: grid;
+        grid-auto-rows: auto;
+        justify-items: center;
+        text-align: center;
+    }
+
+    &__item:nth-child(1) {
+        background-color: #43b1d2;
+    }
+
+    &__item:nth-child(2) {
+        background-color: #3fb6c6;
+    }
+
+    &__item:nth-child(3) {
+        background-color: #3cbbbb;
+    }
+
+    &__item:nth-child(4) {
+        background-color: #37c3a8;
+    }
+
+    &__iconWrapper {
+        width: 76px;
+        height: 76px;
+        background-color: #fff;
+        border-radius: 50%;
+        padding: 10px;
+
+        img {
+            width: 100%;
+        }
+    }
+}
