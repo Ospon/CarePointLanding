@@ -1,0 +1,47 @@
+.whyUs {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto 1fr 1fr;
+    padding-bottom: 0;
+
+    &__reasonItem {
+        display: grid;
+        grid-template-columns: 66px 1fr;
+        grid-template-rows: repeat(2, 1fr);
+        align-self: center;
+
+        h3 {
+            margin: auto 0 auto 20px;
+        }
+
+        p {
+            grid-column: 1/-1;
+        }
+    }
+
+    &__iconWrapper {
+        background: $blue;
+        border-radius: 50%;
+        @extend %gridContentCenter;
+        width: 66px;
+        height: 66px;
+
+        img {
+            width: 44px;
+            height: 44px;
+        }
+    }
+
+    &__titleGroup {
+        grid-column: 1/-1;
+        text-align: center;
+    }
+
+    &__doctorWrapper {
+        grid-column: 2/3;
+        grid-row: 2/-1;
+        display: grid;
+        justify-items: center;
+        align-self: bottom;
+    }
+}
