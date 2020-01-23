@@ -27,6 +27,7 @@ h3 {
 
 p {
   font-size: 1em;
+  line-height: 1.4em;
 }
 
 .mainPadding {
@@ -36,6 +37,19 @@ p {
 main {
   display: flex;
   flex-direction: column;
+}
+
+footer {
+  background: #171717;
+}
+footer .copyright {
+  background-color: #1a1a1a;
+  text-align: center;
+  color: #615555;
+  padding: 55px 5%;
+}
+footer .copyright p {
+  margin: 0;
 }
 
 .mainBtn {
@@ -51,9 +65,10 @@ main {
 
 .mainBtn:hover {
   background-color: #171717;
+  box-shadow: -3.5px 11.5px 40px 0 rgba(0, 1, 1, 0.2);
 }
 
-.whyUs__iconWrapper, .numbers__imgWrapper, .numbers__item, .numbers {
+.whyUs__iconWrapper, .numbers__imgWrapper, .numbers__item, .numbers, .consultation__btnWrapper, .consultation, .about__btnWrapper, .about__arrow {
   display: grid;
   align-items: center;
   justify-items: center;
@@ -93,6 +108,93 @@ main {
   margin: 0;
   font-size: 0.9em;
   margin: auto 12px;
+}
+
+.about {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  grid-template-areas: "worksHead  worksHead headCreative" "worksDesc  worksDesc   creativeDesc" "itemOne    itemTwo treatmentOpen" "itemOne    itemTwo treatmentList" "btnWrapper btnWrapper .";
+}
+.about p {
+  margin: 0;
+  line-height: 1.6em;
+}
+.about h2 {
+  margin-bottom: 0;
+}
+.about__worksHead {
+  grid-area: worksHead;
+}
+.about__worksDesc {
+  grid-area: worksDesc;
+}
+.about__itemOne {
+  grid-area: itemOne;
+}
+.about__itemOne h5 {
+  font-size: 1.2em;
+  margin: 35px 0 10px;
+}
+.about__itemOne span {
+  display: block;
+  color: #1a9bdc;
+  font-family: "Montserrat", serif;
+  font-weight: 500;
+  margin-bottom: 27px;
+}
+.about__itemTwo {
+  grid-area: itemTwo;
+}
+.about__itemTwo h5 {
+  font-size: 1.2em;
+  margin: 35px 0 10px;
+}
+.about__itemTwo span {
+  display: block;
+  color: #1a9bdc;
+  font-family: "Montserrat", serif;
+  font-weight: 500;
+  margin-bottom: 27px;
+}
+.about__headCreative {
+  grid-area: headCreative;
+}
+.about__creativeDesc {
+  grid-area: creativeDesc;
+}
+.about__treatmentOpen {
+  grid-area: treatmentOpen;
+}
+.about__treatmentList {
+  grid-area: treatmentList;
+}
+.about__creativeItem {
+  background-color: #e2e2e2;
+  border-radius: 26px;
+  display: grid;
+  grid-template-columns: 40px 1fr;
+  margin-bottom: 14px;
+  padding: 6px;
+}
+.about__creativeItem h4 {
+  margin: auto 10px;
+}
+.about__creativeItem--active {
+  background-color: #1a9bdc;
+  color: #fff;
+}
+.about__arrow {
+  background-color: #fff;
+  border-radius: 50%;
+  color: #1a9bdc;
+  width: 40px;
+  height: 40px;
+  font-size: 1.4em;
+}
+.about__btnWrapper {
+  grid-area: btnWrapper;
+  padding: 15px 0;
 }
 
 .advantages {
@@ -138,6 +240,41 @@ main {
 }
 .advantages p {
   margin: 0;
+}
+
+.consultation {
+  grid-template-columns: repeat(1, 1fr 300px);
+  background: #e2e2e2;
+  padding: 60px 5%;
+}
+.consultation h3 {
+  margin-bottom: 0;
+}
+.consultation .mainBtn {
+  font-size: 1.5em;
+  box-shadow: -3.5px 11.5px 40px 0 rgba(0, 1, 1, 0.2);
+}
+
+.footer {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  padding: 100px 5% 0 5%;
+}
+.footer h4 {
+  color: #fff;
+}
+.footer__contact img {
+  width: 40px;
+  max-height: 40px;
+}
+.footer__socials {
+  grid-column: 1/-1;
+  padding: 60px 0;
+}
+.footer__socials a {
+  color: #fff;
+  font-size: 1.8em;
+  padding: 10px;
 }
 
 .gallery {
@@ -253,6 +390,34 @@ header .active {
   height: 90px;
   width: 90px;
   margin-bottom: 20px;
+}
+
+.team {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  text-align: center;
+  grid-gap: 20px;
+}
+.team__titleGroup {
+  grid-column: 1/-1;
+}
+.team__imgWrapper img {
+  border-radius: 50%;
+}
+.team__item {
+  text-align: center;
+}
+.team__socialWrapper a {
+  font-size: 1.8em;
+  color: #1a9bdc;
+  padding: 6px;
+}
+.team h5 {
+  font-size: 1.5em;
+  margin: 33px 0 15px;
+}
+.team p {
+  margin: 15px 0 26px;
 }
 
 .whyUs {

@@ -1,0 +1,27 @@
+.footer {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 100px 5% 0 5%;
+
+    h4 {
+        color: $white;
+    }
+
+    &__contact {
+        img {
+            width: 40px;
+            max-height: 40px;
+        }
+    }
+
+    &__socials {
+        grid-column: 1/-1;
+        padding: 60px 0;
+
+        a {
+            color: $white;
+            font-size: 1.8em;
+            padding: 10px;
+        }
+    }
+}

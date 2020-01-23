@@ -1,0 +1,39 @@
+.team {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    text-align: center;
+    grid-gap: 20px;
+
+    &__titleGroup {
+        grid-column: 1/-1;
+    }
+
+    &__imgWrapper {
+        img {
+            border-radius: 50%;
+        }
+    }
+
+    &__item {
+        text-align: center;
+    }
+
+    &__socialWrapper {
+        a {
+            font-size: 1.8em;
+            color: $blue;
+            padding: 6px;
+        }
+    }
+
+    h5 {
+        font-size: 1.5em;
+        margin: 33px 0 15px;
+    }
+
+    p {
+        margin: 15px 0 26px;
+    }
+
+
+}

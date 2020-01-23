@@ -1,0 +1,112 @@
+.about {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    grid-template-areas:
+        'worksHead  worksHead headCreative'
+        'worksDesc  worksDesc   creativeDesc'
+        'itemOne    itemTwo treatmentOpen'
+        'itemOne    itemTwo treatmentList'
+        'btnWrapper btnWrapper .';
+
+    p {
+        margin: 0;
+        line-height: 1.6em;
+    }
+
+    h2 {
+        margin-bottom: 0;
+    }
+
+    &__worksHead {
+        grid-area: worksHead;
+    }
+
+    &__worksDesc {
+        grid-area: worksDesc;
+    }
+
+    &__itemOne {
+        grid-area: itemOne;
+
+        h5 {
+            font-size: 1.2em;
+            margin: 35px 0 10px;
+        }
+        
+        span {
+            display: block;
+            color: $blue;
+            font-family: $title-font, serif;
+            font-weight: 500;
+            margin-bottom: 27px;
+        }
+    }
+
+    &__itemTwo {
+        grid-area: itemTwo;
+
+        h5 {
+            font-size: 1.2em;
+            margin: 35px 0 10px;
+        }
+
+        span {
+            display: block;
+            color: $blue;
+            font-family: $title-font, serif;
+            font-weight: 500;
+            margin-bottom: 27px;
+        }
+    }
+
+    &__headCreative {
+        grid-area: headCreative;
+    }
+
+    &__creativeDesc {
+        grid-area: creativeDesc;
+    }
+
+    &__treatmentOpen {
+        grid-area: treatmentOpen;
+    }
+
+    &__treatmentList {
+        grid-area: treatmentList;
+    }
+
+    &__creativeItem {
+        background-color: $grey;
+        border-radius: 26px;
+        display: grid;
+        grid-template-columns: 40px 1fr;
+        margin-bottom: 14px;
+        padding: 6px;
+
+         h4 {
+             margin: auto 10px;
+         }
+    }
+
+    &__creativeItem--active {
+        background-color: $blue;
+        color: $white;
+    }
+
+    &__arrow {
+        @extend %gridContentCenter;
+        background-color: $white;
+        border-radius: 50%;
+        color: $blue;
+        width: 40px;
+        height: 40px;
+        font-size: 1.4em;
+    }
+
+    &__btnWrapper {
+        grid-area: btnWrapper;
+        @extend %gridContentCenter;
+        padding: 15px 0;
+    }
+}
