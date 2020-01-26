@@ -10,8 +10,44 @@
     }
 
     &__imgWrapper {
+        position: relative;
+
         img {
             border-radius: 50%;
+            width: 100%;
+            transition: 1s;
+
+            &:hover {
+                transition: 1s;
+                transform: scale(0.95)
+            }
+        }
+
+        .healthAnimation {
+            position: absolute;
+            display: grid;
+            justify-items: center;
+            align-items: center;
+            top: calc(50% - 75px);
+            left: calc(50% - 75px);
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, rgba(124, 194, 255, .5) 0%, rgba(200, 94, 199, .5) 47%, rgba(168, 73, 163, .5) 100%);
+            opacity: 0;
+            transition: 1s;
+            cursor: pointer;
+
+            img {
+                width: 60px;
+                height: 60px;
+                border-radius: 1px;
+            }
+
+            &:hover {
+                opacity: 1;
+                transition: 1s;
+            }
         }
     }
 
@@ -24,6 +60,12 @@
             font-size: 1.8em;
             color: $blue;
             padding: 6px;
+            transition: 0.5s;
+
+            &:hover {
+                color: $dark;
+                transition: 0.5s;
+            }
         }
     }
 
@@ -40,7 +82,13 @@
 @media screen and (max-width: 1050px) {
     .team {
         grid-template-columns: repeat(2, 1fr);
+
+        &__imgWrapper img {
+            max-width: 250px;
+            max-height: 250px;
+        }
     }
+
 }
 
 @media screen and (max-width: 800px) {
@@ -48,8 +96,8 @@
         grid-template-columns: repeat(1, 1fr);
 
         &__imgWrapper img {
-            width: 150px;
-            height: 150px;
+            max-width: 150px;
+            max-height: 150px;
         }
     }
 }

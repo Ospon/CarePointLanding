@@ -25,10 +25,12 @@ header {
         color: #6a6a6a;
         font-size: 1.2em;
         font-weight: 500;
+        transition: 0.5s;
     }
 
     nav ul li a:hover {
         color: $blue;
+        transition: 0.5s;
     }
 
     .social {
@@ -42,10 +44,12 @@ header {
     .social a {
         font-size: 1.4em;
         color: $dark;
-    }
+        transition: 1s;
 
-    .social a:hover {
-        color: $blue;
+        &:hover {
+            color: $blue;
+            transition: 0.5s;
+        }
     }
 
     .active {

@@ -8,6 +8,7 @@
     <title>CarePoint doctor</title>
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="packages/animate/animate.css">
     <!-- Google fonts connected -->
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
@@ -20,7 +21,7 @@
     <header>
         <div class="topBar">
             <div class="topBar__logoWrapper">
-                <img src="img/CarePointLogo.png" alt="Care Point Logotype">
+                <a href="#"><img src="img/CarePointLogo.png" alt="Care Point Logotype"></a>
             </div>
             <div class="topBar__companyContact">
                 <div class="topBar__iconWrapper">
@@ -64,12 +65,12 @@
         </div>
     </header>
     <main>
-        <section class="mainOffer mainPadding">
-            <div class="mainOffer__titleWrapper">
+        <section class="offer mainPadding">
+            <div class="offer__titleWrapper">
                 <h1>We have Best Medicare
                     plan options for you</h1>
                 <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.</p>
-                <a class="mainBtn" href="Read more">Read more</a>
+                <a class="mainBtn" href="#">Read more</a>
             </div>
         </section>
         <section class="advantages">
@@ -133,35 +134,33 @@
                 <div class="numbers__imgWrapper">
                     <img src="img/numbers-1.svg" alt="">
                 </div>
-                <span>1000+</span>
+                <h4>1000+</h4>
                 <p> Happy
                     Customers</p>
             </article>
             <article class="numbers__item">
                 <div class="numbers__imgWrapper"><img src="img/numbers-2.svg" alt=""></div>
-                <span>2017</span>
+                <h4>2017</h4>
                 <p>Top
                     Hospitality</p>
             </article>
             <article class="numbers__item">
                 <div class="numbers__imgWrapper"><img src="img/numbers-3.svg" alt=""></div>
-                <span>1105</span>
+                <h4>1105</h4>
                 <p> Innovative
                     Approach</p>
             </article>
             <article class="numbers__item">
                 <div class="numbers__imgWrapper"><img src="img/numbers-4.svg" alt=""></div>
-                <span>500+</span>
+                <h4>500+</h4>
                 <p>Lung
                     Replacement
                 </p>
             </article>
         </section>
         <section class="about mainPadding">
-
             <div class="about__worksHead">
                 <h2>How we works</h2>
-
             </div>
             <div class="about__worksDesc">
                 <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
@@ -219,24 +218,23 @@
                 <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.Sed
                     ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.</p>
             </div>
-
             <img src="img/Gallery-1.jpg" alt="">
             <img src="img/Gallery-2.jpg" alt="">
             <img src="img/Gallery-3.jpg" alt="">
             <img src="img/Gallery-4.jpg" alt="">
             <img src="img/Gallery-5.jpg" alt="">
             <img src="img/Gallery-6.jpg" alt="">
-
         </section>
-        <seciton class="team mainPadding">
+        <section class="team mainPadding">
             <div class="team__titleGroup">
                 <h3>Our Team</h3>
                 <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.Sed
                     ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.</p>
             </div>
-
             <article class="team__item">
-                <div class="team__imgWrapper"><img src="img/Team-1.jpg" alt=""></div>
+                <div class="team__imgWrapper"><img src="img/Team-1.jpg" alt="">
+                    <div class="healthAnimation"><img src="img/numbers-1.svg" alt=""></div>
+                </div>
                 <h5>Dr Ricky Doe</h5>
                 <p>Assistant Surgeon</p>
                 <div class="team__socialWrapper">
@@ -246,7 +244,9 @@
                 </div>
             </article>
             <article class="team__item">
-                <div class="team__imgWrapper"><img src="img/Team-2.jpg" alt=""></div>
+                <div class="team__imgWrapper"><img src="img/Team-2.jpg" alt="">
+                    <div class="healthAnimation"><img src="img/numbers-2.svg" alt=""></div>
+                </div>
                 <h5>Dr Ricky Doe</h5>
                 <p>Assistant Surgeon</p>
                 <div class="team__socialWrapper">
@@ -256,7 +256,9 @@
                 </div>
             </article>
             <article class="team__item">
-                <div class="team__imgWrapper"><img src="img/Team-3.jpg" alt=""></div>
+                <div class="team__imgWrapper"><img src="img/Team-3.jpg" alt="">
+                    <div class="healthAnimation"><img src="img/numbers-3.svg" alt=""></div>
+                </div>
                 <h5>Dr Ricky Doe</h5>
                 <p>Assistant Surgeon</p>
                 <div class="team__socialWrapper">
@@ -266,7 +268,9 @@
                 </div>
             </article>
             <article class="team__item">
-                <div class="team__imgWrapper"><img src="img/Team-4.jpg" alt=""></div>
+                <div class="team__imgWrapper"><img src="img/Team-4.jpg" alt="">
+                    <div class="healthAnimation"><img src="img/numbers-4.svg" alt=""></div>
+                </div>
                 <h5>Dr Ricky Doe</h5>
                 <p>Assistant Surgeon</p>
                 <div class="team__socialWrapper">
@@ -275,7 +279,7 @@
                     <a href="#"><i class="fab fa-vk"></i></a>
                 </div>
             </article>
-        </seciton>
+        </section>
         <section class="consultation mainPadding">
             <h3>New Patient Special Offer Complimentary Consultation</h3>
             <div class="btnWrapper">
@@ -286,67 +290,69 @@
     </main>
     <footer>
         <div class="footer">
-        <div class="footer__item">
-            <h4>Get in Touch</h4>
-            <div class="footer__contact">
-                <img src="img/footer-mail.svg" alt="">
-                <p>free@psdfreebies.com <br>
-                    free@psdfreebies.com</p>
+            <div class="footer__item">
+                <h4>Get in Touch</h4>
+                <div class="footer__contact">
+                    <img src="img/footer-mail.svg" alt="">
+                    <p><a href="mailto:free@psdfreebies.com">free@psdfreebies.com</a><br>
+                        <a href="mailto:free@psdfreebies.com">free@psdfreebies.com</a></p>
+                </div>
+                <div class="footer__contact">
+                    <img src="img/footer-phone.svg" alt="">
+                    <p><a href="tel:+1234567890">+123 456 7890</a> <br>
+                        <a href="tel:+1234567890">+123 456 7890</a></p>
+                </div>
+                <div class="footer__contact">
+                    <img src="img/footer-map.svg" alt="">
+                    <p>123, Main Road, New City, My Country 123456</p>
+                </div>
+                <div class="footer__socials">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-google-plus-g"></i></a>
+                    <a href="#"><i class="fab fa-vk"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                </div>
             </div>
-            <div class="footer__contact">
-                <img src="img/footer-phone.svg" alt="">
-                <p>+123 456 7890 <br>
-                    +123 456 7890</p>
+            <div class="footer__item">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Contact us</a></li>
+                    <li><a href="#">Faq</a></li>
+                    <li><a href="#">Insurance</a></li>
+                    <li><a href="#">Contact us</a></li>
+                </ul>
             </div>
-            <div class="footer__contact">
-                <img src="img/footer-map.svg" alt="">
-                <p>123, Main Road, New City, My Country 123456</p>
+            <div class="footer__item">
+                <h4>Our Services</h4>
+                <ul>
+                    <li><a href="#">Work Injuries</a></li>
+                    <li><a href="#">Sport Injuries</a></li>
+                    <li><a href="#">Cold Laser Therapy</a></li>
+                    <li><a href="#">Massage Therapy</a></li>
+                    <li><a href="#">Physiotherapy</a></li>
+                    <li><a href="#">Chiropratic Therapy</a></li>
+                </ul>
             </div>
-            <div class="footer__socials">
-                <a href="#"><i class="fab fa-facebook-f"></i></a>
-                <a href="#"><i class="fab fa-google-plus-g"></i></a>
-                <a href="#"><i class="fab fa-vk"></i></a>
-                <a href="#"><i class="fab fa-youtube"></i></a>
-                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            <div class="footer__item">
+                <h4>Enquiry Form</h4>
+                <form action="send">
+                    <input type="text" placeholder="Name" pattern="^([А-Яа-яA-Za-z]+ [А-Яа-яA-Za-z]+)$">
+                    <input type="tel" placeholder="Phone" name="tel" pattern="^\+7\d{3}\d{7}$" maxlength="12">
+                    <textarea name="form" id="form" cols="30" rows="6" placeholder='Message'></textarea>
+                    <button type="submit" class="smallBtn">Submit</button>
+                </form>
             </div>
         </div>
-        <div class="footer__item">
-            <h4>Quick Links</h4>
-            <ul>
-                <li><a href="#">Blog</a></li>
-                <li><a href="#">Contact us</a></li>
-                <li><a href="#">Faq</a></li>
-                <li><a href="#">Insurance</a></li>
-                <li><a href="#">Contact us</a></li>
-            </ul>
-        </div>
-        <div class="footer__item">
-            <h4>Our Services</h4>
-            <ul>
-                <li><a href="#">Work Injuries</a></li>
-                <li><a href="#">Sport Injuries</a></li>
-                <li><a href="#">Cold Laser Therapy</a></li>
-                <li><a href="#">Massage Therapy</a></li>
-                <li><a href="#">Physiotherapy</a></li>
-                <li><a href="#">Chiropratic Therapy</a></li>
-            </ul>
-        </div>
-        <div class="footer__item">
-            <h4>Enquiry Form</h4>
-            <form action="">
-                <input type="text" placeholder="Name" pattern="^([А-Яа-яA-Za-z]+ [А-Яа-яA-Za-z]+)$">
-                <input type="phone" placeholder="Phone" name="tel" type="tel" pattern="^\+7\d{3}\d{7}$"
-                 maxlength="12">
-                <textarea name="" id="" cols="30" rows="6" placeholder='Message'></textarea>
-                <button type="submit" class="smallBtn">Submit</button>
-            </form>
-        </div>
-    </div>
         <div class="copyright">
             <p>Copyright © 2017. PSDFreebies.com | Best PSD Template for freelancer and agencies
             </p>
         </div>
     </footer>
+    <script src="packages/jquery/jquery-3.2.1.min.js"></script>
+    <script src="packages/viewport-checker/jquery.viewportchecker.min.js"></script>
+    <script src="scripts/app.js"></script>
 </body>
 
 </html>

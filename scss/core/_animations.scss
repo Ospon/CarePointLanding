@@ -1,0 +1,19 @@
+@keyframes backgroundSize {
+    from {
+        background-size: cover;
+    }
+
+    to {
+        background-size: 110%;
+    }
+}
+
+@keyframes fontSize {
+    from {
+        font-size: 3em;
+    }
+
+    to {
+        font-size: 3.2em;
+    }
+}

@@ -4,6 +4,17 @@
     grid-template-columns: repeat(4, 1fr);
     padding: 100px 5% 0 5%;
 
+    a {
+        color: $font-footer;
+        text-decoration: none;
+        transition: 0.5s;
+
+        &:hover {
+            color: $blue;
+            transition: 0.5s;
+        }
+    }
+
     h4 {
         color: $white;
         font-size: 1.3em;
@@ -31,6 +42,12 @@
             color: $white;
             font-size: 1.7em;
             padding: 10px;
+            transition: 0.5s;
+
+            &:hover {
+                color: $blue;
+                transition: 0.5s;
+            }
         }
     }
 
@@ -44,22 +61,24 @@
                 padding: 10px 0 10px 30px;
                 position: relative;
 
-            &::before {
-                content: '▸';
-                position: absolute;
-                left: 0;
-                top: 8px;
-                width: 3px;
-                height: 5px;
-                color: $blue;
-            }
+                &::before {
+                    content: '▸';
+                    position: absolute;
+                    left: 0;
+                    top: 8px;
+                    width: 3px;
+                    height: 5px;
+                    color: $blue;
+                }
 
                 a {
                     color: $font-footer;
                     text-decoration: none;
-    
+                    transition: 0.5s;
+
                     &:hover {
                         color: $blue;
+                        transition: 0.5s;
                     }
                 }
             }
@@ -73,6 +92,13 @@
             margin-bottom: 20px;
             padding: 10px 0;
             width: 100%;
+            transition: 0.5s;
+
+            &:hover {
+                border-bottom: 1px solid $blue;
+                transition: 0.5s;
+                color: $blue;
+            }
 
             &:focus {
                 background-color: &font-dark;
@@ -87,6 +113,12 @@
             color: $font-footer;
             margin-bottom: 20px;
             width: 100%;
+
+            &:hover {
+                border-bottom: 1px solid $blue;
+                transition: 0.5s;
+                color: $blue;
+            }
         }
     }
 }
@@ -94,6 +126,11 @@
 @media screen and (max-width: 1050px) {
     .footer {
         grid-template-columns: repeat(2, 1fr);
+        padding: 30px 5%;
+
+        h4 {
+            margin: 30px 0 20px;
+        }
 
         &__item {
             ul li {
@@ -117,16 +154,6 @@
         &__item:last-child {
             grid-column: 1/-1;
             grid-row: 2/3;
-        }
-    }
-}
-
-@media screen and (max-width: 500px) {
-    .footer {
-        padding: 30px 5%;
-
-        h4 {
-            margin: 30px 0 20px;
         }
     }
 }

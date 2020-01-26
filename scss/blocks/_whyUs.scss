@@ -26,6 +26,10 @@
         width: 66px;
         height: 66px;
 
+        &:hover {
+            animation: bounce 1s;
+        }
+
         img {
             width: 44px;
             height: 44px;
@@ -50,9 +54,10 @@
     .whyUs {
         grid-template-columns: repeat(2, 1fr);
 
-        &__reasonItem {            
+        &__reasonItem {
             grid-template-rows: repeat(2, minmax(150px, 1fr));
         }
+
         &__iconWrapper {
             align-self: center;
         }
@@ -70,7 +75,7 @@
 
         &__doctorWrapper {
             grid-column: auto;
-            grid-row: auto;  
+            grid-row: auto;
             border-bottom: none;
         }
 

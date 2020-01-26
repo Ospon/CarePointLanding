@@ -83,6 +83,7 @@
         grid-template-columns: 40px 1fr;
         margin-bottom: 14px;
         padding: 6px;
+        transition: 1s;
 
         h4 {
             margin: auto 10px;
@@ -92,16 +93,19 @@
             background-color: $blue;
             color: $white;
             cursor: pointer;
+            transition: 1s;
         }
     }
 
     &__creativeItem--active {
         background-color: $blue;
         color: $white;
+        transition: 1s;
 
         &:hover {
             background-color: $light-blue;
             cursor: pointer;
+            transition: 1s;
         }
     }
 
@@ -154,9 +158,9 @@
             'treatmentList'
             'btnWrapper';
 
-            &__itemOne img {
-                width: 100%;
-            }
+        &__itemOne img {
+            width: 100%;
+        }
     }
 }
 
@@ -179,8 +183,8 @@
 
 @media screen and (max-width: 400px) {
     .about {
-       img {
-           width: 100%;
-       }
+        img {
+            width: 100%;
+        }
     }
 }

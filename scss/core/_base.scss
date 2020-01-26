@@ -65,10 +65,12 @@ footer {
     display: inline-block;
     margin: 0 auto;
     box-shadow: -3.5px 11.5px 40px 0 rgba(0, 1, 1, 0.2);
+    transition: 1s;
 
     &:hover {
         background-color: $dark;
-
+        transition: 1s;
+        box-shadow: -3.5px 11.5px 40px 0 rgba(0, 1, 1, 0.8);
     }
 }
 
@@ -83,9 +85,12 @@ footer {
     background-color: $blue;
     display: inline-block;
     margin: 0 auto;
+    transition: 1s;
 
     &:hover {
         background-color: blue;
+        transition: 1s;
+        transform: scale(1.1);
     }
 }
 
@@ -93,6 +98,10 @@ footer {
     display: grid;
     align-items: center;
     justify-items: center;
+}
+
+.hidden {
+    opacity: 0;
 }
 
 @media screen and (max-width: 800px) {
