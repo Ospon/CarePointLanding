@@ -33,7 +33,7 @@
             font-size: 1.2em;
             margin: 35px 0 10px;
         }
-        
+
         span {
             display: block;
             color: $blue;
@@ -84,14 +84,25 @@
         margin-bottom: 14px;
         padding: 6px;
 
-         h4 {
-             margin: auto 10px;
-         }
+        h4 {
+            margin: auto 10px;
+        }
+
+        &:hover {
+            background-color: $blue;
+            color: $white;
+            cursor: pointer;
+        }
     }
 
     &__creativeItem--active {
         background-color: $blue;
         color: $white;
+
+        &:hover {
+            background-color: $light-blue;
+            cursor: pointer;
+        }
     }
 
     &__arrow {

@@ -51,3 +51,9 @@
         margin: 0;
     }
 }
+
+@media screen and (max-width: 1050px) {
+    .advantages {
+        grid-template-columns: repeat(repeat, 2fr);
+    }
+}

@@ -45,8 +45,9 @@ footer {
     .copyright {
         background-color: #1a1a1a;
         text-align: center;
-        color: #615555;
-        padding: 55px 5%;
+        color: $font-footer;
+        font-size: 0.8em;
+        padding: 50px 5%;
 
         p {
             margin: 0;
@@ -55,7 +56,7 @@ footer {
 }
 
 .mainBtn {
-    padding: 16px 30px;
+    padding: 16px 34px;
     color: #fff;
     border-radius: 30px;
     text-decoration: none;
@@ -63,11 +64,29 @@ footer {
     background-color: $blue;
     display: inline-block;
     margin: 0 auto;
+    box-shadow: -3.5px 11.5px 40px 0 rgba(0, 1, 1, 0.2);
+
+    &:hover {
+        background-color: $dark;
+
+    }
 }
 
-.mainBtn:hover {
-    background-color: $dark;
-    box-shadow: -3.5px 11.5px 40px 0 rgba(0, 1, 1, 0.2);
+.smallBtn {
+    padding: 12px 34px;
+    font-size: 0.8em;
+    color: #fff;
+    border-radius: 30px;
+    border: none;
+    text-decoration: none;
+    text-transform: uppercase;
+    background-color: $blue;
+    display: inline-block;
+    margin: 0 auto;
+
+    &:hover {
+        background-color: blue;
+    }
 }
 
 %gridContentCenter {

@@ -1,14 +1,23 @@
 .footer {
     display: grid;
+    grid-gap: 40px;
     grid-template-columns: repeat(4, 1fr);
     padding: 100px 5% 0 5%;
 
     h4 {
         color: $white;
+        font-size: 1.3em;
+        margin-bottom: 70px;
     }
 
     &__contact {
+        display: grid;
+        grid-template-columns: 40px 1fr;
+        grid-gap: 40px;
+        margin-bottom: 20px;
+
         img {
+            align-self: center;
             width: 40px;
             max-height: 40px;
         }
@@ -20,8 +29,64 @@
 
         a {
             color: $white;
-            font-size: 1.8em;
+            font-size: 1.7em;
             padding: 10px;
+        }
+    }
+
+    &__item {
+        ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+
+            li {
+                padding: 10px 0 10px 30px;
+                position: relative;
+
+            &::before {
+                content: '▸';
+                position: absolute;
+                left: 0;
+                top: 8px;
+                width: 3px;
+                height: 5px;
+                color: $blue;
+            }
+
+                a {
+                    color: $font-footer;
+                    text-decoration: none;
+    
+                    &:hover {
+                        color: $blue;
+                    }
+                }
+            }
+        }
+
+        input {
+            background-color: $dark;
+            border: none;
+            border-bottom: 1px solid $font-footer;
+            color: $font-footer;
+            margin-bottom: 20px;
+            padding: 10px 0;
+            width: 100%;
+
+            &:focus {
+                background-color: &font-dark;
+                color: $blue;
+            }
+        }
+
+        textarea {
+            background-color: $dark;
+            border: none;
+            border-bottom: 1px solid $font-footer;
+            color: $font-footer;
+            margin-bottom: 20px;
+            width: 100%;
         }
     }
 }

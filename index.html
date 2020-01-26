@@ -313,32 +313,31 @@
         <div class="footer__item">
             <h4>Quick Links</h4>
             <ul>
-                <li>Blog</li>
-                <li>Contact us</li>
-                <li>Faq</li>
-                <li>Insurance</li>
-                <li>Contact us</li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Contact us</a></li>
+                <li><a href="#">Faq</a></li>
+                <li><a href="#">Insurance</a></li>
+                <li><a href="#">Contact us</a></li>
             </ul>
         </div>
         <div class="footer__item">
             <h4>Our Services</h4>
             <ul>
-                <li>Blog</li>
-                <li>Work Injuries</li>
-                <li>Sport Injuries</li>
-                <li>Cold Laser Therapy</li>
-                <li>Massage Therapy</li>
-                <li>Physiotherapy</li>
-                <li>Chiropratic Therapy</li>
+                <li><a href="#">Work Injuries</a></li>
+                <li><a href="#">Sport Injuries</a></li>
+                <li><a href="#">Cold Laser Therapy</a></li>
+                <li><a href="#">Massage Therapy</a></li>
+                <li><a href="#">Physiotherapy</a></li>
+                <li><a href="#">Chiropratic Therapy</a></li>
             </ul>
         </div>
         <div class="footer__item">
             <h4>Enquiry Form</h4>
             <form action="">
-                <input type="text" placeholder="Name">
-                <input type="phone" placeholder="Phone">
-                <textarea name="" id="" cols="30" rows="10" placeholder="Message">
-                    </textarea>
+                <input type="text" placeholder="Name" pattern="^([А-Яа-яA-Za-z]+ [А-Яа-яA-Za-z]+)$">
+                <input type="phone" placeholder="Phone" name="tel" type="tel" pattern="^\+7\d{3}\d{7}$"
+                 maxlength="12">
+                <textarea name="" id="" cols="30" rows="6" placeholder='Message'></textarea>
                 <button type="submit" class="smallBtn">Submit</button>
             </form>
         </div>

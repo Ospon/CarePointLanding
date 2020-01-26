@@ -17,7 +17,7 @@ header {
     }
 
     nav ul li {
-        padding: 30px 10px;
+        padding: 30px 20px;
     }
 
     nav ul li a {
@@ -52,4 +52,20 @@ header {
         font-weight: 700;
         color: $dark;
     }
+}
+
+@media screen and (max-width: 1050px) {
+
+    header {
+        nav {
+            grid-column: 1/-1;
+        }
+
+        .social {
+            grid-column: 1/-1;
+            justify-items: left;
+            padding-left: 30px;margin-bottom: 20px;
+        }
+    }
+
 }
