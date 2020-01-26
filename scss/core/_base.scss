@@ -94,3 +94,23 @@ footer {
     align-items: center;
     justify-items: center;
 }
+
+@media screen and (max-width: 800px) {
+    .mainPadding {
+        padding: 50px 5%;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    h1 {
+        font-size: 2em;
+    }
+
+    h2 {
+        font-size: 1.7em;
+    }
+
+    h3 {
+        font-size: 1.4em;
+    }
+}

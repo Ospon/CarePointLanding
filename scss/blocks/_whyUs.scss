@@ -45,3 +45,45 @@
         align-self: bottom;
     }
 }
+
+@media screen and (max-width: 1050px) {
+    .whyUs {
+        grid-template-columns: repeat(2, 1fr);
+
+        &__reasonItem {            
+            grid-template-rows: repeat(2, minmax(150px, 1fr));
+        }
+        &__iconWrapper {
+            align-self: center;
+        }
+
+        &__doctorWrapper {
+            border-bottom: 2px solid $blue;
+        }
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .whyUs {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(1, 1fr);
+
+        &__doctorWrapper {
+            grid-column: auto;
+            grid-row: auto;  
+            border-bottom: none;
+        }
+
+        &__reasonItem {
+            grid-template-rows: repeat(2, minmax(110px, 1fr));
+        }
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .whyUs {
+        img {
+            width: 100%;
+        }
+    }
+}

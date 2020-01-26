@@ -54,6 +54,16 @@
 
 @media screen and (max-width: 1050px) {
     .advantages {
-        grid-template-columns: repeat(repeat, 2fr);
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .advantages {
+        grid-template-columns: repeat(1, 1fr);
+
+        &__item {
+            padding: 40px;
+        }
     }
 }

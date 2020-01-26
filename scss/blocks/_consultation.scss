@@ -1,8 +1,9 @@
 .consultation {
-    grid-template-columns: repeat(1, 1fr 300px);
+    grid-template-columns: repeat(auto, 1fr 300px);
     background: $grey;
     @extend %gridContentCenter;
     padding: 60px 5%;
+    grid-row-gap: 40px;
 
     &__btnWrapper {
         @extend %gridContentCenter;
@@ -15,5 +16,12 @@
     .mainBtn {
         font-size: 1.5em;
         box-shadow: -3.5px 11.5px 40px 0 rgba(0, 1, 1, 0.2);
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .consultation {
+        text-align: center;
+        grid-template-columns: repeat(1, 1fr);
     }
 }

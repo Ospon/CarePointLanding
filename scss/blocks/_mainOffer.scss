@@ -23,11 +23,17 @@
 
 @media screen and (max-width: 1050px) {
     .mainOffer {
+        background: linear-gradient(
+        rgba(255, 255, 255, 0.45), 
+        rgba(255, 255, 255, 0.45)
+      ), url('../../img/MainDoctor.jpg') no-repeat center;
+    background-size: cover;
+
         &__titleWrapper {
             width: 100%;
             display: grid;
             grid-template-rows: repeat(1rf);
-            padding: 0;
+            padding: 50px 0;
         }
     }
 }
